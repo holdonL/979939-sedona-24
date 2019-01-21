@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Борщенко](https://up.htmlacademy.ru/htmlcss/24/user/979939).
-* Наставник: `Дмитрий Гуляев`(https://htmlacademy.ru/profile/dima).
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
