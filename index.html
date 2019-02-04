@@ -10,15 +10,35 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo"><img src="img/logo.svg" alt="Гостиницы Sedona" width="140" height="72"></a>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-          <li class="site-navigation-item"><a href="gallery.html">Фото и видео</a></li>
-          <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-item">
+            <a href="info.html">
+              Информация
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="gallery.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="index.html" class="main-header-logo" aria-label="Главная страница сайта">
+              <img src="img/logo.svg" alt="Гостиницы Sedona" width="140" height="72">
+            </a>
+            </li>
+          <li class="site-navigation-item">
+            <a href="map.html">
+              Карта штата
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="catalog.html">
+              Гостиницы
+            </a>
+          </li>
         </ul>
       </nav>
-      <img src="img/welcome.svg" alt="Гостиницы Sedona" width="459" height="353">
+      <img class="welcome" src="img/welcome.svg" alt="Гостиницы Sedona" width="459" height="353">
     </header>
 
     <main class="container">
@@ -33,22 +53,6 @@
             <span>№1</span>
             <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
             <img src="img/layer-10.jpg" title="Городок Седона" alt="Городок Седона" width="800" height="256">
-            <section class="features">
-              <h2 class="visually-hidden">Достоинства</h2>
-              <ul class="features-list">
-                <li class="features-list-item">
-                  <h3>Жилье</h3>
-                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="features-list-item">
-                  <h3>Еда</h3>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="features-list-item">
-                  <h3>Сувениры</h3>
-                  <p>Не только китайского, но и местного производства!</p>
-                </li>  
-              </ul>
             </section>
           </li>
           <li class="advantages-list-item">
@@ -72,6 +76,24 @@
             <span>№5</span>
             <p>Большинство едет в Гранд каньон и толпится там</p>
           </li>
+          <li class="advantages-list-item">
+            <section class="features">
+              <h2 class="visually-hidden">Достоинства</h2>
+              <ul class="features-list">
+                <li class="features-list-item">
+                  <h3>Жилье</h3>
+                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="features-list-item">
+                  <h3>Еда</h3>
+                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="features-list-item">
+                  <h3>Сувениры</h3>
+                  <p>Не только китайского, но и местного производства!</p>
+                </li>  
+              </ul>
+          </li>
         </ol>
       </section>
 
@@ -82,22 +104,46 @@
         <h2 class="visually-hidden">Поиск лучших предложений</h2>
         <strong>Заинтересовались?</strong>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button search-button">Поиск гостиницы в Седоне</button>
+        <button class="button button-search">Поиск гостиницы в Седоне</button>
+        <!--MODAL-->
+        <form action="https://echo.htmlacademy.ru/" method="POST" class="modal">
+          <p class="form-item">
+            <label>Дата заезда:
+              <input type="date" name="arrival" value="2017-04-24">
+            </label>
+          </p>
+          <p class="form-item">
+            <label>Дата выезда:
+              <input type="date" name="departure" value="2017-07-04">
+            </label>
+          </p>
+          <p class="form-item">
+            <label>Взрослые:
+              <input size="1" type="text" name="grownups">
+            </label>
+            <label>Дети:
+              <input size="1" type="text" name="children">
+            </label>
+          </p>
+          <button type="submit" class="button button-find">Найти</button>
+        </form>
         <!--MAP-->
+        <img src="img/map.jpg" alt="Как до нас добраться" width="1200" height="593">
       </section>
       <section class="socials">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <b>#Visitsedona</b>
         <ul class="social-list">
-          <li class="social-list-item"><a>Twitter</a></li>
-          <li class="social-list-item"><a>Facebook</a></li>
-          <li class="social-list-item"><a>Youtube</a></li>
+          <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса в Твиттере"></a></li>
+          <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса на Фэйсбуке"></a></li>
+          <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса на Ютубе"></a></li>
         </ul>
         <a class="developer" href="htmlacademy.ru">
-          <img src="academylogo.png" alt="Разработано HTMLAcademy" width="100" height="100">
+          Website by
+          <img src="img/logo-name.svg" alt="Разработано HTMLAcademy" width="101" height="40">
         </a>
       </section>
     </footer>
-    
+  
   </body>
 </html>
