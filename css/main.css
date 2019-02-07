@@ -1,0 +1,61 @@
+/*Общие стили*/
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.site-navigation li {
+    width: 239px;
+    padding: 22px 74px;
+}
+
+.site-navigation a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.bg-photo {
+    width: 1200px;
+    height: 584px;
+    background-image:
+    url(../img/welcome.svg),
+    url(../img/polygon.svg),
+    url(../img/background-photo.jpg);
+    background-position: 50% 50%, 50% 100%, 50% 50%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 459px 353px, 1200px 57px, 1200px 584px;
+}
+
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
