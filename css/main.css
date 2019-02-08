@@ -1,4 +1,5 @@
-/*Общие стили*/
+/*ОБЩИЕ СТИЛИ*/
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -21,24 +22,45 @@ body {
     font-stretch: normal;
     text-transform: uppercase;
     color: #333;
+    background-color: #fff;
 }
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*ГЛАВНОЕ МЕНЮ (НАВИГАЦИЯ)*/
 
 .site-navigation {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    width: 1200px;
 }
 
 .site-navigation li {
     width: 239px;
-    padding: 22px 74px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: auto;
 }
 
 .site-navigation a {
     font-weight: bold;
     text-decoration: none;
     color: #000;
+}
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 529px;
 }
 
 .bg-photo {
@@ -53,9 +75,171 @@ body {
     background-size: 459px 353px, 1200px 57px, 1200px 584px;
 }
 
+/*ВСТУПИТЕЛЬНЫЙ ЛОЗУНГ ПОСЛЕ МЕНЮ И КАРТИНКИ*/
 
-
-.container {
+.text-intro {
     width: 1200px;
-    margin: 0 auto;
+    text-align: center;
+    padding-top: 57px;
+    padding-bottom: 43px;
 }
+
+.intro-primary,
+.intro-secondary {
+    margin: 0;
+}
+
+.intro-primary {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.intro-secondary {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*БЛОК ПРЕИМУЩЕСТВ*/
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+}
+
+.advantages-list-item {
+    width: 400px;
+    min-height: 256px;
+    text-align: center;
+}
+
+.advantages-list-item:first-child,
+.advantages-list-item:nth-child(2) {
+    flex-basis: 100%;
+}
+
+.advantages-list-item:last-child {
+    order: 2;
+}
+
+.advantages-list-item:nth-child(1) {
+    order: 1;
+    background-image: url(../img/layer-10.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.advantages-list-item:nth-child(2) {
+    order: 3;
+    background-image: url(../img/layer-5.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.advantages-list-item:nth-child(3) {
+    order: 4;
+}
+
+.advantages-list-item:nth-child(4) {
+    order: 5;
+}
+
+.advantages-list-item:nth-child(5) {
+    order: 6;
+}
+
+.advantages-list-item img,
+.advantages-text-block {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-text-block {
+    box-sizing: border-box;
+    width: 400px;
+    text-align: center;
+    padding: 0 60px;
+    padding-top: 46px;
+    padding-bottom: 64px;
+    background-color: #eeeeee;
+    color: #000;
+}
+
+.advantages-text-block p,
+.advantages-text-block span {
+    color: #333;
+}
+
+.advantages-text-block-right {
+    float: right;
+    background-color: #81b3d2;
+    color: #fff;
+}
+
+.advantages-text-block-left {
+    float: left;
+    background-color: #81b3d2;
+    color: #fff;
+}
+
+.advantages-text-block-left p,
+.advantages-text-block-left span,
+.advantages-text-block-right p,
+.advantages-text-block-right span {
+    color: #fff;
+}
+
+
+.advantages-list-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.advantages-list-item p {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+}
+
+.advantages-list-item span {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+/* ПОДРАЗДЕЛ ПРЕИМУЩЕСТВ */
+
+.features-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    text-align: center;
+}
+
+.features-list-item {
+    width: 400px;
+}
+
+.features-list-item h3 {
+    color: #000;
+}
+
+.features-list-item p {
+    
+}
+
+
