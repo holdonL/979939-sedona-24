@@ -117,7 +117,7 @@
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button-search">Поиск гостиницы в Седоне</button>
           <!--MODAL-->
-          <!-- <form action="https://echo.htmlacademy.ru/" method="POST" class="modal">
+          <form action="https://echo.htmlacademy.ru/" method="POST" class="modal">
             <p class="form-item">
               <label>Дата заезда:
                 <input type="date" name="arrival" value="2017-04-24">
@@ -129,17 +129,19 @@
               </label>
             </p>
             <p class="form-item">
-              <label>Взрослые:
-                <input size="1" type="text" name="grownups">
-              </label>
-              <label>Дети:
-                <input size="1" type="text" name="children">
-              </label>
+              <label for="grownups" class="grownups">Взрослые:</label>
+              <button type="button" class="button-amount button-minus">-</button>
+              <input id="grownups" size="1" type="text" name="grownups">
+              <button type="button" class="button-amount button-plus">-</button>
+              <label for="children" class="children">Дети:</label>
+              <button type="button" class="button-amount button-minus">-</button>
+              <input id="children" size="1" type="text" name="children">
+              <button type="button" class="button-amount button-plus">-</button>
             </p>
             <button type="submit" class="button button-find">Найти</button>
-          </form> -->
+          </form>
           <!--MAP-->
-          <img src="img/map.jpg" alt="Как до нас добраться" width="1200" height="473">
+          <img class="map" src="img/map.jpg" alt="Как до нас добраться" width="1200" height="473">
         </section>
         <section class="footer-socials">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
@@ -158,5 +160,6 @@
         </section>
       </footer>
     </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
