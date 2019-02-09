@@ -554,6 +554,20 @@ input[type="date"] {
     box-sizing: border-box;
     font-weight: bold;
     color: #000;
+    background-image: url(../img/calendar.svg);
+    background-position: 316px center;
+    background-repeat: no-repeat;
+}
+
+input[type="date"]:hover {
+    background-color: #ebebeb;
+    background-image: none;
+}
+
+input[type="date"]:focus {
+    background-image: none;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
 }
 
 input[type="text"] {
