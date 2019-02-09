@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,92 +8,109 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Отели в Седоне</title>
-</head>
-<body>
-  <div class="container">
-    <header class="main-header">
-      <a href="index.html" class="main-header-logo" aria-label="Главная страница сайта">
-        <img src="img/logo.svg" alt="Гостиницы Sedona" width="140" height="72">
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-item">
-            <a href="info.html">
-              Информация
-            </a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="gallery.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="map.html">
-              Карта штата
-            </a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="catalog.html">
-              Гостиницы
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <a href="index.html" class="main-header-logo" aria-label="Главная страница сайта">
+          <img src="img/logo.svg" alt="Гостиницы Sedona" width="140" height="71">
+        </a>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a href="info.html">
+                Информация
+              </a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="gallery.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="map.html">
+                Карта штата
+              </a>
+            </li>
+            <li class="site-navigation-item current">
+              <a href="catalog.html">
+                Гостиницы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-        <h1 class="visually-hidden">Список доступных отелей в Седоне</h1>
-        <section class="catalog">
-            <ul>
-                <li class="catalog-item">
-                    <img src="img/layer-21.jpg" alt="Гостиница Amara Resort & Spa" width="135" height="90">
-                    <div class="catalog-item-description">
-                        <h2 class="catalog-item-heading">Amara Resort & Spa</h2>
-                        <span>Гостиница</span><span>От 4000 Р.</span>
-                        <a class="button">Подробнее</a>
-                        <a class="button">Забронировать</a>
-                    </div>
-                    <span class="rating">Рейтинг: 8,5</span>
-                </li>
-                <li class="catalog-item">
-                    <img src="img/layer-89-copy.jpg" alt="Мотель Desert Quail Inn" width="135" height="90">
-                    <div class="catalog-item-description">
-                        <h2 class="catalog-item-heading">Desert Quail Inn</h2>
-                        <span>Мотель</span><span>От 3000 Р.</span>
-                        <a class="button">Подробнее</a>
-                        <a class="button">Забронировать</a>
-                    </div>
-                    <span class="rating">Рейтинг: 8,9</span>
-                </li>
-                <li class="catalog-item">
-                    <img src="img/layer-22.jpg" alt=" Апартаменты Villas At Poco Diablo" width="135" height="90">
-                    <div class="catalog-item-description">
-                        <h2 class="catalog-item-heading">Villas At Poco Diablo</h2>
-                        <span>Апартаменты</span><span>От 2000 Р.</span>
-                        <a class="button">Подробнее</a>
-                        <a class="button">Забронировать</a>
-                    </div>
-                    <span class="rating">Рейтинг: 9,2</span>
-                </li>
-            </ul>
-        </section>
-    </main>
+      <main class="main-catalog">
+          <section class="catalog">
+              <h1 class="visually-hidden">Список доступных отелей в Седоне</h1>
+              <ul class="catalog-list">
+                  <li class="catalog-item">
+                      <img src="img/layer-21.jpg" alt="Гостиница Amara Resort & Spa" width="135" height="90">
+                      <div class="catalog-item-description">
+                          <h2 class="catalog-item-heading">Amara Resort & Spa</h2>
+                          <div class="button-div">
+                            <span>Гостиница</span>
+                            <a href="#" class="button button-info">Подробнее</a>
+                          </div>
+                          <div class="button-div">
+                            <span class="price">От 4000 Р.</span>
+                            <a href="#" class="button button-book">Забронировать</a>
+                          </div>
+                      </div>
+                      <span class="rating">Рейтинг: 8,5</span>
+                  </li>
+                  <li class="catalog-item">
+                      <img src="img/layer-89-copy.jpg" alt="Мотель Desert Quail Inn" width="135" height="90">
+                      <div class="catalog-item-description">
+                          <h2 class="catalog-item-heading">Desert Quail Inn</h2>
+                          <div class="button-div">
+                            <span>Мотель</span>
+                            <a href="#" class="button button-info">Подробнее</a>
+                          </div>
+                          <div class="button-div">
+                            <span class="price">От 3000 Р.</span>
+                            <a href="#" class="button button-book">Забронировать</a>
+                          </div>
+                      </div>
+                      <span class="rating">Рейтинг: 8,9</span>
+                  </li>
+                  <li class="catalog-item">
+                      <img src="img/layer-22.jpg" alt=" Апартаменты Villas At Poco Diablo" width="135" height="90">
+                      <div class="catalog-item-description">
+                          <h2 class="catalog-item-heading">Villas At Poco Diablo</h2>
+                          <div class="button-div">
+                            <span>Апартаменты</span>
+                            <a href="#" class="button button-info">Подробнее</a>
+                          </div>
+                          <div class="button-div">
+                            <span class="price">От 2000 Р.</span>
+                            <a href="#" class="button button-book">Забронировать</a>
+                          </div>
+                      </div>
+                      <span class="rating">Рейтинг: 9,2</span>
+                  </li>
+              </ul>
+          </section>
+      </main>
 
-    <footer class="page-footer">
-        <section class="socials">
-            <h2 class="visually-hidden">Мы в соцсетях</h2>
-            <b>#Visitsedona</b>
+      <footer class="page-footer">
+        <section class="footer-socials">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <b class="footer-socials-item">#Visitsedona</b>
+          <div class="footer-socials-item">
             <ul class="social-list">
-                <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса в Твиттере"></a></li>
-                <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса на Фэйсбуке"></a></li>
-                <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса на Ютубе"></a></li>
+              <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса в Твиттере"></a></li>
+              <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса на Фэйсбуке"></a></li>
+              <li class="social-list-item"><a href="#" aria-label="Страница нашего сервиса на Ютубе"></a></li>
             </ul>
-            <a class="developer" href="https://htmlacademy.ru/">
-                Website by
-                <img src="img/logo-name.svg" alt="Разработано HTMLAcademy" width="101" height="40">
-            </a>
+          </div>
+          <a class="developer footer-socials-item" href="https://htmlacademy.ru/">
+            <sup>Website by</sup>
+            <img src="img/logo-name.svg" alt="Разработано HTMLAcademy" width="101" height="40">
+          </a>
         </section>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
