@@ -439,8 +439,7 @@ body {
 .catalog-item {
     flex-basis: 100%;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 74px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -452,7 +451,7 @@ body {
     margin-right: 30px;
 }
 
-.catalog-item h2 {
+.catalog-item h3 {
     margin: 0;
     line-height: 21px;
     font-size: 21px;
@@ -514,7 +513,207 @@ body {
 
 /* ФОРМА КАТАЛОГА */
 
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
+.filters-form {
+    display: flex;
+    justify-content: space-evenly;
+    height: 217px;
+    width: 100%;
+    background-image: url(../img/catalog-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-left: 72px;
+    padding-right: 72px;
+    box-sizing: border-box;
+}
+
+.filters-form legend {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.filters-form label {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 14px;
+}
+
+.input-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.input-list li {
+    position: relative;
+    margin-bottom: 23px;
+    padding-left: 27px;
+}
+
+.input-list input[type="checkbox"] + label::before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    top: -1px;
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-list input[type="checkbox"]:checked + label::before {
+    background-image: url(../img/checkbox-on.svg);
+    left: 0;
+}
+
+.type-of-housing,
+.infrastructure {
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+
+.prices {
+    flex-basis: 50%;
+    padding-left: 210px;
+}
+
+/* ФИЛЬТР КАТАЛОГА */
+
+.filter-range {
+  width: 330px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.price-controls {
+  position: relative;
+  box-sizing: border-box;
+  height: 36px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+  height: 36px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  height: 30px;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  vertical-align: top;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.filters-form .max-price,
+.filters-form .min-price {
+    margin: 0;
+}
+
+.filters-form .prices-heading {
+    margin-bottom: 9px;
+}
 
 /* ФОРМА ЗАПИСИ */
 
@@ -549,7 +748,7 @@ body {
     margin-bottom: 29px;
 }
 
-input[type="date"] {
+.index-main input[type="date"] {
     width: 346px;
     height: 38px;
     background-color: #f2f2f2;
@@ -564,18 +763,18 @@ input[type="date"] {
     background-repeat: no-repeat;
 }
 
-input[type="date"]:hover {
+.index-main input[type="date"]:hover {
     background-color: #ebebeb;
     background-image: none;
 }
 
-input[type="date"]:focus {
+.index-main input[type="date"]:focus {
     background-image: none;
     background-color: #fff;
     border: 2px solid #e5e5e5;
 }
 
-input[type="text"] {
+.index-main input[type="text"] {
     width: 38px;
     height: 38px;
     background-color: #f2f2f2;
