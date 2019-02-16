@@ -19,6 +19,7 @@ body {
     font-stretch: normal;
     text-transform: uppercase;
     color: #333;
+    background-color: #f2f2f2;
 } 
 
 .container {
@@ -26,7 +27,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     background-color: #fff;
-
+    box-shadow: 8px 0 15px -3px #0001011a , -8px 0 15px -3px #0001011a;
 }
 
 /*ГЛАВНОЕ МЕНЮ (НАВИГАЦИЯ)*/
@@ -500,6 +501,7 @@ body {
 }
 
 .rating {
+    position: relative;
     margin-left: auto;
     margin-top: auto;
     text-align: center;
@@ -509,6 +511,26 @@ body {
     width: 110px;
     height: 27px;
     background-color: #f2f2f2;
+}
+
+.rating::before {
+    position: absolute;
+    content: "★ ★ ★ ★";
+    font-size: 23px;
+    color: #81b3d2;
+    text-align: end;
+    width: 110px;
+    height: 27px;
+    top: -65px;
+    left: 0;
+}
+
+.rating-second::before {
+    content: "★ ★ ★";
+}
+
+.rating-third::before {
+    content: "★ ★";
 }
 
 /* ФОРМА КАТАЛОГА */
@@ -577,6 +599,10 @@ fieldset {
 .input-list input[type="checkbox"]:checked + label::before {
     background-image: url(../img/checkbox-on.svg);
     left: 0;
+}
+
+.input-list input[type="checkbox"]:disabled + label::before {
+    opacity: 0.4;
 }
 
 .type-of-housing,
@@ -713,6 +739,102 @@ fieldset {
 
 .filters-form .prices-heading {
     margin-bottom: 9px;
+}
+
+/* БЛОК СОРИТРОВКИ */
+
+.sorting {
+    width: 100%;
+    height: 85px;
+    padding: 25px 72px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    word-spacing: -.36em;
+}
+
+.sorting b,
+.sorting span,
+.sorting a {
+    word-spacing: normal;
+}
+
+.sorting span,
+.sorting span {
+    margin-left: -2px;
+}
+
+
+.sorting b {
+    margin-right: 49px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000;
+    vertical-align: bottom;
+}
+
+.sorting span {
+    margin-right: 40px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting a {
+    margin-right: 33px;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: dotted 1px #81b3d2;
+}
+
+.sorting a:hover {
+    color: #81b3d2;
+}
+
+.sorting a:active {
+    color: #000;
+    border: 0;
+}
+
+.sorting a.current {
+    color: #81b3d2;
+    border: 0;
+}
+
+.sorting .sort-by-rating {
+    margin-right: 0;
+}
+
+.sorting .sort-from-top,
+.sorting .sort-from-bottom {
+    margin: 0;
+    font-size: 15px;
+    border: 0;
+    color: #cacaca;
+}
+
+.sorting .sort-from-top:hover,
+.sorting .sort-from-top:focus,
+.sorting .sort-from-bottom:hover,
+.sorting .sort-from-bottom:focus {
+    color: #000;
+}
+
+.sorting .sort-from-top:active,
+.sorting .sort-from-bottom:active {
+    color: #81b3d2;
+}
+
+.sorting .sort-from-top.current,
+.sorting .sort-from-bottom.current {
+    color: #81b3d2;
+}
+
+.sorting .sort-from-bottom {
+    margin-left: 504px;
+    margin-right: 12px;
 }
 
 /* ФОРМА ЗАПИСИ */

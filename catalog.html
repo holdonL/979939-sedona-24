@@ -50,15 +50,15 @@
               <legend>Инфраструктура:</legend>
               <ul class="input-list">
                 <li>
-                  <input id="pool" class="visually-hidden" type="checkbox" name="" checked>
+                  <input id="pool" class="visually-hidden" type="checkbox" name="infrastructure" value="pool" checked>
                   <label for="pool">Бассейн</label>
                 </li>
                 <li>
-                  <input id="parking" class="visually-hidden" type="checkbox" name="">
+                  <input id="parking" class="visually-hidden" type="checkbox" name="infrastructure" value="parking">
                   <label for="parking">Парковка</label>
                 </li>
                 <li>
-                  <input id="wifi" class="visually-hidden" type="checkbox" name="">
+                  <input id="wifi" class="visually-hidden" type="checkbox" name="infrastructure" value="wifi">
                   <label for="wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -67,15 +67,15 @@
               <legend>Тип жилья:</legend>
               <ul class="input-list">
                 <li>
-                  <input id="hotel" class="visually-hidden" type="checkbox" name="" checked>
+                  <input id="hotel" class="visually-hidden" type="checkbox" name="type-of-housing" value="hotel" checked>
                   <label for="hotel">Гостиница</label>
                 </li>
                 <li>
-                  <input id="motel" class="visually-hidden" type="checkbox" name="" checked>
+                  <input id="motel" class="visually-hidden" type="checkbox" name="type-of-housing" value="motel" checked>
                   <label for="motel">Мотель</label>
                 </li>
                 <li>
-                  <input id="appartments" class="visually-hidden" type="checkbox" name="" checked>
+                  <input id="appartments" class="visually-hidden" type="checkbox" name="type-of-housing" value="apartments" checked>
                   <label for="appartments">Аппартаменты</label>
                 </li>
               </ul>
@@ -98,6 +98,15 @@
               </div>
             </fieldset>
           </form>
+          <div class="sorting">
+            <b>Найдено: 3</b>
+            <span>Сортировка:</span>
+            <a href="#" class="current">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#" class="sort-by-rating">По рейтингу</a>
+            <a class="sort-from-bottom" href="#">&#x25B2;</a>
+            <a class="sort-from-top current" href="#">&#x25BC;</a>
+          </div>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска доступных отелей</h2>
@@ -115,7 +124,7 @@
                   <a href="#" class="button button-book">Забронировать</a>
                 </div>
               </div>
-              <span class="rating">Рейтинг: 8,5</span>
+              <span class="rating rating-first">Рейтинг: 8,5</span>
             </li>
             <li class="catalog-item">
               <img src="img/layer-89-copy.jpg" alt="Мотель Desert Quail Inn" width="135" height="90">
@@ -130,7 +139,7 @@
                   <a href="#" class="button button-book">Забронировать</a>
                 </div>
               </div>
-              <span class="rating">Рейтинг: 8,9</span>
+              <span class="rating rating-second">Рейтинг: 8,9</span>
             </li>
             <li class="catalog-item">
               <img src="img/layer-22.jpg" alt=" Апартаменты Villas At Poco Diablo" width="135" height="90">
@@ -145,7 +154,7 @@
                   <a href="#" class="button button-book">Забронировать</a>
                 </div>
               </div>
-              <span class="rating">Рейтинг: 9,2</span>
+              <span class="rating rating-third">Рейтинг: 9,2</span>
             </li>
           </ul>
         </section>
