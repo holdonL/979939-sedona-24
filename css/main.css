@@ -27,7 +27,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     background-color: #fff;
-    box-shadow: 8px 0 15px -3px #0001011a , -8px 0 15px -3px #0001011a;
+    box-shadow: 8px 0 15px -3px rgba(0, 1, 1, 0.1), -8px 0 15px -3px rgba(0, 1, 1, 0.1);
 }
 
 /*ГЛАВНОЕ МЕНЮ (НАВИГАЦИЯ)*/
@@ -691,17 +691,34 @@ fieldset {
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 0;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(88, 88, 88, 0.651);
   cursor: pointer;
 }
 
+.range-toggle::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+    background-color: #ababab;
+}
+
 .range-toggle:hover {
-  background: #1c4f80;
+  width: 22px;
+  height: 22px;
+}
+
+.range-toggle:hover::before {
+    top: 9px;
+    left: 9px;
 }
 
 .range-toggle-min {
@@ -959,11 +976,13 @@ fieldset {
 .map {
     position: absolute;
     z-index: -1;
+    box-shadow: 8px 0 15px -3px rgba(0, 1, 1, 0.1), -8px 0 15px -3px rgba(0, 1, 1, 0.1);
 }
 
 .footer-socials-index {
     position: absolute;
     z-index: 0;
     top: 474px;
+    box-shadow: 8px 0 15px -3px rgba(0, 1, 1, 0.1), -8px 0 15px -3px rgba(0, 1, 1, 0.1);
 }
 
