@@ -887,7 +887,7 @@ fieldset {
     margin-bottom: 29px;
 }
 
-.index-main input[type="date"] {
+.footer-main input[type="date"] {
     width: 346px;
     height: 38px;
     background-color: #f2f2f2;
@@ -902,18 +902,18 @@ fieldset {
     background-repeat: no-repeat;
 }
 
-.index-main input[type="date"]:hover {
+.footer-main input[type="date"]:hover {
     background-color: #ebebeb;
     background-image: none;
 }
 
-.index-main input[type="date"]:focus {
+.footer-main input[type="date"]:focus {
     background-image: none;
     background-color: #fff;
     border: 2px solid #e5e5e5;
 }
 
-.index-main input[type="text"] {
+.footer-main input[type="text"] {
     width: 38px;
     height: 38px;
     background-color: #f2f2f2;
