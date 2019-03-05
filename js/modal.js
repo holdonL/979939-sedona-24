@@ -3,6 +3,7 @@ var button = document.querySelector(".button-search");
 
 button.addEventListener("click", toggleMenu);
 
-function toggleMenu() {
+function toggleMenu(evt) {
+    evt.preventDefault;
     modal.classList.toggle("show");
 }
