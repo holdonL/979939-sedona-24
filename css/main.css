@@ -42,8 +42,7 @@ body {
 
 .site-navigation-item {
     width: 239px;
-    padding: 15px 0;
-    text-align: center;
+    padding: 15px 73px;
 }
 
 .site-navigation-item.current a {
@@ -52,6 +51,16 @@ body {
 
 .site-navigation li:nth-child(2) {
     margin-right: auto;
+}
+
+.site-navigation li:nth-child(2),
+.site-navigation li:nth-child(1) {
+    text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+    text-align: right;
 }
 
 .site-navigation a {
@@ -78,6 +87,7 @@ body {
 .bg-photo {
     width: 1200px;
     height: 584px;
+    background-color: rgb(27, 186, 207);
     background-image:
     url(../img/welcome.svg),
     url(../img/polygon.svg),
@@ -446,9 +456,12 @@ body {
     fill: #bdbbbc;
 }
 
-.developer sup {
-    top: -1.5em;
+.developer span {
+    display: inline-block;
+    font-size: 14px;
     margin-right: 5px;
+    vertical-align: top;
+    padding-top: 10px;
 }
 
 /* КАТАЛОГ */
@@ -590,6 +603,7 @@ fieldset {
     justify-content: space-evenly;
     height: 217px;
     width: 100%;
+    background-color: rgb(128, 65, 35);
     background-image: url(../img/catalog-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -802,7 +816,7 @@ fieldset {
     margin-bottom: 9px;
 }
 
-/* БЛОК СОРИТРОВКИ */
+/* БЛОК СОРТИРОВКИ */
 
 .sorting {
     display: flex;
@@ -907,8 +921,6 @@ fieldset {
 
 .modal {
     display: block;
-    visibility: hidden;
-    opacity: 0;
     padding: 55px;
     width: 569px;
     height: 395px;
@@ -917,14 +929,16 @@ fieldset {
     top: 291px;
     left: 316px;
     background-color: #fff;
-    transform: translate3d(-1px, -395px, 0);
-    transition: 1s ease-out all;
+}
+
+.js {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .modal.show {
     visibility: visible;
     opacity: 1;
-    transform: translate3d(-1px, -0px, 0);
 }
 
 .modal label {
