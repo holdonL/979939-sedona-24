@@ -38,11 +38,13 @@ body {
     list-style: none;
     display: flex;
     width: 1200px;
+    box-sizing: border-box;
 }
 
 .site-navigation-item {
     width: 239px;
     padding: 15px 73px;
+    box-sizing: border-box;
 }
 
 .site-navigation-item.current a {
@@ -51,6 +53,7 @@ body {
 
 .site-navigation li:nth-child(2) {
     margin-right: auto;
+    padding-right: 68px;
 }
 
 .site-navigation li:nth-child(2),
@@ -86,15 +89,15 @@ body {
 
 .bg-photo {
     width: 1200px;
-    height: 584px;
+    height: 505px;
     background-color: rgb(27, 186, 207);
     background-image:
     url(../img/welcome.svg),
     url(../img/polygon.svg),
     url(../img/background-photo.jpg);
-    background-position: 50% 50%, 50% 100%, 50% 50%;
+    background-position: 50% 50%, 50% 447px, 50% 50%;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 459px 353px, 1200px 57px, 1200px 584px;
+    background-size: 459px 353px, 1200px 59px, 1200px 505px;
 }
 
 /*ВСТУПИТЕЛЬНЫЙ ЛОЗУНГ ПОСЛЕ МЕНЮ И КАРТИНКИ*/
@@ -102,8 +105,8 @@ body {
 .text-intro {
     width: 1200px;
     text-align: center;
-    padding-top: 57px;
-    padding-bottom: 43px;
+    padding-top: 60px;
+    padding-bottom: 48px;
 }
 
 .intro-primary,
@@ -115,7 +118,7 @@ body {
     font-size: 21px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 }
 
 .intro-secondary {
@@ -188,8 +191,8 @@ body {
     width: 400px;
     text-align: center;
     padding: 0 60px;
-    padding-top: 46px;
-    padding-bottom: 64px;
+    padding-top: 47px;
+    padding-bottom: 56px;
     background-color: #eee;
     color: #000;
 }
@@ -241,7 +244,8 @@ body {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
+    margin-top: 25px;
 }
 
 /* ПОДРАЗДЕЛ ПРЕИМУЩЕСТВ */
@@ -262,6 +266,7 @@ body {
     padding-bottom: 81px;
     text-align: center;
     position: relative;
+    box-sizing: border-box;
 }
 
 .features-list-item::before {
@@ -296,7 +301,8 @@ body {
 
 .features-list-item h3 {
     color: #000;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-top: 5px;
 }
 
 /* БЛОК ПОИСКА */
@@ -634,6 +640,11 @@ fieldset {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 10px;
+}
+
+.input-list2 {
+    margin-left: -8px;
 }
 
 .input-list li {
@@ -677,85 +688,85 @@ fieldset {
 /* ФИЛЬТР КАТАЛОГА */
 
 .filter-range {
-  width: 330px;
-
-  color: #ffffff;
-  text-transform: uppercase;
+    width: 318px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 3px;
 }
 
 .price-controls {
-  position: relative;
-  box-sizing: border-box;
-  height: 36px;
-  margin-bottom: 20px;
-  vertical-align: top;
-  font-size: 0;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+    position: relative;
+    box-sizing: border-box;
+    height: 36px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 22px;
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 32px;
-  cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
-  height: 36px;
+    width: 90px;
+    padding-left: 65px;
+    height: 36px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
-  height: 30px;
-  color: inherit;
-  font: inherit;
-  background: none;
-  border: none;
-  vertical-align: top;
+    width: 50px;
+    margin: 0;
+    height: 30px;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    vertical-align: top;
 }
 
 .range-controls {
-  position: relative;
-  margin-bottom: 32px;
+    position: relative;
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
-  background: #ffffff;
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  border: 0;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(88, 88, 88, 0.651);
-  cursor: pointer;
+    position: absolute;
+    top: -9px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(88, 88, 88, 0.651);
+    cursor: pointer;
 }
 
 .range-toggle::before {
@@ -770,8 +781,8 @@ fieldset {
 }
 
 .range-toggle:hover {
-  width: 22px;
-  height: 22px;
+    width: 22px;
+    height: 22px;
 }
 
 .range-toggle:hover::before {
@@ -780,31 +791,30 @@ fieldset {
 }
 
 .range-toggle-min {
-  left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+    left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
+    color: #000000;
+    background: #ffffff;
 }
 
 .filters-form .max-price,
@@ -922,6 +932,7 @@ fieldset {
 .modal {
     display: block;
     padding: 55px;
+    padding-top: 35px;
     width: 569px;
     height: 395px;
     box-sizing: border-box;
@@ -929,6 +940,7 @@ fieldset {
     top: 291px;
     left: 316px;
     background-color: #fff;
+    box-shadow: 8px 0 15px -3px rgba(0, 1, 1, 0.1), -8px 0 15px -3px rgba(0, 1, 1, 0.1);
 }
 
 .js {
@@ -1028,6 +1040,7 @@ fieldset {
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
+    margin-top: 25px;
 }
 
 .button-find:hover,
