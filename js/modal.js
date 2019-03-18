@@ -9,3 +9,4 @@ function toggleMenu(evt) {
     evt.preventDefault;
     modal.classList.toggle("show");
 }
+
